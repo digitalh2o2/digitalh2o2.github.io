@@ -3,6 +3,14 @@ html {
   height: 100%;
   margin: 0; }
 
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.site-content {
+  flex: 1; }
+
 .navbar {
   width: auto;
   height: 50px;
@@ -31,7 +39,8 @@ html {
       color: ivory; }
 
 .work-section {
-  height: 1300px;
+  height: auto;
+  overflow: hidden;
   color: ivory; }
   .work-section h1 {
     text-align: center;
@@ -39,21 +48,42 @@ html {
     color: #757d81; }
   .work-section .work-items {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 900px;
+    height: auto;
     width: auto; }
     .work-section .work-items .work-item {
-      height: 505px;
+      height: 500px;
       width: 700px;
       margin: 10px;
       border: 1px solid black; }
+      .work-section .work-items .work-item h2 {
+        text-align: center; }
       .work-section .work-items .work-item img {
-        height: 100%;
-        width: 100%;
-        background: blue; }
+        height: 450px;
+        width: 100%; }
         .work-section .work-items .work-item img:hover {
           opacity: 0.6; }
+      .work-section .work-items .work-item .buttons {
+        position: relative;
+        padding-bottom: 20px;
+        text-align: center; }
+      .work-section .work-items .work-item .padder {
+        padding-top: 40px; }
+      .work-section .work-items .work-item a {
+        width: 200px;
+        padding: 5px 10px;
+        border: 2px solid black;
+        border-radius: 10%;
+        text-decoration: none;
+        background: ivory;
+        color: black;
+        font-size: 1.2em;
+        font-weight: bold; }
+        .work-section .work-items .work-item a:hover {
+          background: #757d81;
+          color: ivory; }
     .work-section .work-items .sliderGroup {
       transition: all 0.5s;
       transform: scale(0.1);
@@ -72,5 +102,31 @@ html {
     text-align: center;
     font-size: 3em;
     color: ivory; }
+  .about-section .profile-image {
+    display: flex; }
+    .about-section .profile-image img {
+      width: 250px;
+      height: 250px;
+      border-radius: 10%;
+      margin-left: auto;
+      margin-right: auto; }
+
+.skills-section {
+  height: auto;
+  background-color: ivory; }
+  .skills-section h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #757d81; }
+  .skills-section .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%; }
+    .skills-section .skills img {
+      height: 70px;
+      width: 70px; }
 
 /*# sourceMappingURL=main.css.map */

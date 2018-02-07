@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <link rel="stylesheet" href="./css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Saul Ocampo</title>
   </head>
-  <body>
+  <body class="site">
     <nav class="navbar">
       <ul>
         <li>Contact</li>
@@ -21,38 +22,55 @@
       </div>
     </section>
 
-    <section class="work-section">
+    <section class="work-section site-content">
       <h1>Work</h1>
       <div class="work-items">
         <div class="work-row">
+          <!-- Start individual divs for projects -->
           <div class="work-item sliderGroup">
-            <div class="">
+            <div>
               <h2>Current Weather</h2>
-              <button type="button" name="button">Test</button>
-              <img src="./images/forecast.jpeg" alt="Forecast">
-            </div>
+              <div class="buttons">
+                <a class="button" href="https://digitalh2o2.github.io/forecast_search/" target="_blank">Live</a>
+                <a class="button" href="https://github.com/digitalh2o2/forecast_search" target="_blank">Github</a>
+              </div>
 
+              <img  src="./images/forecast.jpeg" alt="Forecast">
+            </div>
           </div>
+
           <div class="work-item sliderGroup">
-            <div class="">
+            <div class="padder">
               <h2>React Bitget</h2>
+              <div class="buttons">
+                <a class="button" href="https://react-bitget.surge.sh/" target="_blank">Live</a>
+                <a class="button" href="https://github.com/digitalh2o2/react_bitget" target="_blank">Github</a>
+              </div>
+
               <img src="./images/bitget.jpeg" alt="React Bitget">
             </div>
-
-
           </div>
         </div>
+
         <div class="work-row">
           <div class="work-item sliderGroup">
             <div class="">
               <h2>Recipe Finder</h2>
+              <div class="buttons">
+                <a class="button" href="https://digitalh2o2.github.io/recipefinder/" target="_blank">Live</a>
+                <a class="button" href="https://github.com/digitalh2o2/recipefinder" target="_blank">Github</a>
+              </div>
               <img src="./images/recipe.jpeg" alt="Recipe">
             </div>
-
           </div>
+
           <div class="work-item sliderGroup">
-            <div class="">
+            <div class="padder">
               <h2>Fwitter</h2>
+              <div class="buttons">
+                <a class="button" href="https://hidden-brushlands-65586.herokuapp.com/" target="_blank">Live</a>
+                <a class="button" href="https://github.com/digitalh2o2/fwitter" target="_blank">Github</a>
+              </div>
               <img src="./images/fwitter.jpeg" alt="Fwitter">
             </div>
           </div>
@@ -63,9 +81,28 @@
 
     <section class="about-section">
       <h1>About</h1>
-      <div class="">
-        h2
+      <div class="profile-image">
+        <img src="./images/profile.jpg" alt="">
       </div>
+    </section>
+
+    <section class="skills-section">
+      <h1>Skillset</h1>
+      <div class="skills">
+        <i class="fab fa-html5 fa-5x"></i>
+        <i class="fab fa-css3-alt fa-5x"></i>
+        <i class="fab fa-js fa-5x"></i>
+        <i class="fab fa-react fa-5x"></i>
+        <i class="fab fa-node fa-5x"></i>
+        <i class="fab fa-sass fa-5x"></i>
+        <i class="fab fa-github-alt fa-5x"></i>
+        <i class="fas fa-code-branch fa-5x"></i>
+        <img src="./images/mongodb.png" alt="mongoDB">
+        <img src="./images/jquery.png" alt="jQuery">
+        <img src="./images/bootstrap.png" alt="Bootstrap">
+        <img src="./images/bulma.png" alt="Bulma">
+      </div>
+
     </section>
     <script src='./main.js'></script>
   </body>

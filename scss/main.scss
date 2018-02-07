@@ -4,6 +4,16 @@ html {
   margin: 0;
 }
 
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
 .navbar {
   width: auto;
   height: 50px;
@@ -42,7 +52,8 @@ html {
 }
 
 .work-section {
-  height: 1300px;
+  height: auto;
+  overflow: hidden;
   color: rgb(255, 255, 240);
 
   h1 {
@@ -53,24 +64,55 @@ html {
 
   .work-items {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 900px;
+    height: auto;
     width: auto;
 
     .work-item {
-      height: 505px;
+      height: 500px;
       width: 700px;
       margin: 10px;
       border: 1px solid black;
 
+      h2 {
+        text-align: center;
+      }
+
       img {
-        height: 100%;
+        height: 450px;
         width: 100%;
-        background: blue;
 
         &:hover {
           opacity: 0.6;
+        }
+      }
+
+      .buttons {
+        position: relative;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+
+      .padder {
+        padding-top: 40px;
+      }
+
+      a {
+        width: 200px;
+        padding: 5px 10px;
+        border: 2px solid black;
+        border-radius: 10%;
+        text-decoration: none;
+        background: rgb(255, 255, 240);
+        color: black;
+        font-size: 1.2em;
+        font-weight: bold;
+
+        &:hover {
+          background: rgb(117, 125, 129);
+          color: rgb(255, 255, 240);
         }
       }
     }
@@ -100,5 +142,42 @@ html {
     text-align: center;
     font-size: 3em;
     color: rgb(255, 255, 240);
+  }
+
+  .profile-image {
+    display: flex;
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 10%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.skills-section {
+  height: auto;
+  background-color: rgb(255, 255, 240);
+
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(117, 125, 129);
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+
+    img {
+      height: 70px;
+      width: 70px;
+    }
   }
 }

@@ -1,6 +1,6 @@
 console.log("hi");
 
-let sliders = document.querySelectorAll(".work-item");
+let sliders = document.querySelectorAll(".sliderGroup");
 console.log(sliders);
 
 // from the Underscore Library
