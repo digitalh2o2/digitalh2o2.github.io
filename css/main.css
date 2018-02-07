@@ -14,8 +14,8 @@ html {
 .navbar {
   width: auto;
   height: 50px;
-  background: #757d81;
-  border-bottom: 1px solid ivory; }
+  background: rgba(48, 43, 59, 0.89);
+  border-bottom: 1px solid #ffb67a; }
   .navbar ul {
     margin: 0;
     padding: 12px; }
@@ -23,29 +23,32 @@ html {
     display: inline-block;
     float: right;
     font-size: 1.2em;
-    color: ivory;
+    color: #ffb67a;
     margin: 0 20px; }
 
 .name-section {
   display: flex;
-  background: #757d81;
+  background: rgba(48, 43, 59, 0.89);
   height: 600px;
   width: 100%;
   padding: -10px; }
   .name-section .name-container {
-    margin: auto; }
+    margin: auto;
+    text-align: center; }
     .name-section .name-container h1 {
-      font-size: 3em;
-      color: ivory; }
+      font-size: 4em;
+      color: #ffb67a; }
+    .name-section .name-container p {
+      font-size: 1.5em;
+      color: #ffb67a; }
 
 .work-section {
   height: auto;
-  overflow: hidden;
-  color: ivory; }
+  width: auto; }
   .work-section h1 {
     text-align: center;
     font-size: 3em;
-    color: #757d81; }
+    color: rgba(48, 43, 59, 0.89); }
   .work-section .work-items {
     display: flex;
     flex-direction: row;
@@ -54,16 +57,20 @@ html {
     height: auto;
     width: auto; }
     .work-section .work-items .work-item {
-      height: 500px;
+      height: auto;
       width: 700px;
       margin: 10px;
-      border: 1px solid black; }
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease-in-out; }
       .work-section .work-items .work-item h2 {
-        text-align: center; }
+        text-align: center;
+        color: rgba(48, 43, 59, 0.89); }
       .work-section .work-items .work-item img {
         height: 450px;
-        width: 100%; }
+        width: 100%;
+        padding-bottom: 50px; }
         .work-section .work-items .work-item img:hover {
+          cursor: pointer;
           opacity: 0.6; }
       .work-section .work-items .work-item .buttons {
         position: relative;
@@ -75,15 +82,17 @@ html {
         width: 200px;
         padding: 5px 10px;
         border: 2px solid black;
-        border-radius: 10%;
+        border-radius: 8%;
         text-decoration: none;
-        background: ivory;
-        color: black;
+        color: rgba(48, 43, 59, 0.89);
         font-size: 1.2em;
         font-weight: bold; }
         .work-section .work-items .work-item a:hover {
-          background: #757d81;
-          color: ivory; }
+          background: rgba(48, 43, 59, 0.89);
+          color: #ffb67a; }
+      @media (max-width: 770px) {
+        .work-section .work-items .work-item {
+          width: auto; } }
     .work-section .work-items .sliderGroup {
       transition: all 0.5s;
       transform: scale(0.1);
@@ -92,41 +101,98 @@ html {
       opacity: 1;
       transform: scale(1);
       margin-bottom: 20px; }
-      .work-section .work-items .sliderGroup.active h2 {
-        color: black; }
+      .work-section .work-items .sliderGroup.active:hover {
+        transform: scale(1.011);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
 
 .about-section {
-  background-color: #757d81;
+  background-color: rgba(48, 43, 59, 0.89);
   height: 500px; }
   .about-section h1 {
     text-align: center;
     font-size: 3em;
-    color: ivory; }
+    color: #ffb67a; }
   .about-section .profile-image {
     display: flex; }
     .about-section .profile-image img {
-      width: 250px;
+      width: 225px;
       height: 250px;
-      border-radius: 10%;
+      border-radius: 50%;
       margin-left: auto;
       margin-right: auto; }
 
 .skills-section {
   height: auto;
-  background-color: ivory; }
+  background-color: white; }
   .skills-section h1 {
     text-align: center;
     font-size: 3em;
-    color: #757d81; }
+    color: rgba(48, 43, 59, 0.89); }
   .skills-section .skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     width: 80%; }
     .skills-section .skills img {
       height: 70px;
-      width: 70px; }
+      width: 70px;
+      padding-bottom: 5px; }
+    .skills-section .skills .skill-icons {
+      text-align: center;
+      -webkit-transition: 1s ease-in-out;
+      -moz-transition: 1s ease-in-out;
+      -o-transition: 1s ease-in-out;
+      transition: 1s ease-in-out; }
+      .skills-section .skills .skill-icons p {
+        color: rgba(48, 43, 59, 0.89);
+        font-size: 1.3em; }
+      .skills-section .skills .skill-icons .fa-js:hover {
+        color: #f0db4f; }
+      .skills-section .skills .skill-icons .fa-react:hover {
+        color: #61dafb; }
+      .skills-section .skills .skill-icons .fa-node:hover {
+        color: #8bc500; }
+      .skills-section .skills .skill-icons .fa-html5:hover {
+        color: #f16529; }
+      .skills-section .skills .skill-icons .fa-css3-alt:hover {
+        color: #379ad6; }
+      .skills-section .skills .skill-icons .fa-sass:hover {
+        color: #cd669a; }
+      .skills-section .skills .skill-icons .fa-code-branch:hover {
+        color: #f05033; }
+      .skills-section .skills .skill-icons:hover {
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        transform: rotateY(360deg); }
+
+.contact-section {
+  height: auto;
+  background-color: rgba(48, 43, 59, 0.89);
+  padding-bottom: 25px; }
+  .contact-section h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #ffb67a;
+    padding-top: 25px; }
+  .contact-section .contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+    .contact-section .contact-icons .fa-github-alt,
+    .contact-section .contact-icons .fa-linkedin,
+    .contact-section .contact-icons .fa-envelope {
+      color: white;
+      padding: 15px; }
+      .contact-section .contact-icons .fa-github-alt:hover,
+      .contact-section .contact-icons .fa-linkedin:hover,
+      .contact-section .contact-icons .fa-envelope:hover {
+        color: #ffb67a; }
 
 /*# sourceMappingURL=main.css.map */

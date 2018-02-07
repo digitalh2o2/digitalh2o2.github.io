@@ -1,7 +1,6 @@
 console.log("hi");
 
 let sliders = document.querySelectorAll(".sliderGroup");
-console.log(sliders);
 
 // from the Underscore Library
 function debounce(func, wait = 20, immediate = true) {
@@ -30,10 +29,8 @@ function checkScroll(e) {
     const isHalfShown = slideAt > slider.offsetTop;
     const isNotScrollPass = window.scrollY < bottomOfSlider;
     if (isHalfShown && isNotScrollPass) {
-      console.log(true);
       slider.classList.add("active");
     } else {
-      console.log(false);
       slider.classList.remove("active");
     }
   });

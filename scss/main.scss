@@ -1,3 +1,7 @@
+$dark-purple: rgba(48, 43, 59, 0.89);
+$peach: rgb(255, 182, 122);
+$medium: 770px;
+
 body,
 html {
   height: 100%;
@@ -17,8 +21,8 @@ html {
 .navbar {
   width: auto;
   height: 50px;
-  background: rgb(117, 125, 129);
-  border-bottom: 1px solid rgb(255, 255, 240);
+  background: $dark-purple;
+  border-bottom: 1px solid $peach;
 
   ul {
     margin: 0;
@@ -29,37 +33,42 @@ html {
     display: inline-block;
     float: right;
     font-size: 1.2em;
-    color: rgb(255, 255, 240);
+    color: $peach;
     margin: 0 20px;
   }
 }
 
 .name-section {
   display: flex;
-  background: rgb(117, 125, 129);
+  background: $dark-purple;
   height: 600px;
   width: 100%;
   padding: -10px;
 
   .name-container {
     margin: auto;
+    text-align: center;
 
     h1 {
-      font-size: 3em;
-      color: rgb(255, 255, 240);
+      font-size: 4em;
+      color: $peach;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: $peach;
     }
   }
 }
 
 .work-section {
   height: auto;
-  overflow: hidden;
-  color: rgb(255, 255, 240);
+  width: auto;
 
   h1 {
     text-align: center;
     font-size: 3em;
-    color: rgb(117, 125, 129);
+    color: $dark-purple;
   }
 
   .work-items {
@@ -71,20 +80,24 @@ html {
     width: auto;
 
     .work-item {
-      height: 500px;
+      height: auto;
       width: 700px;
       margin: 10px;
-      border: 1px solid black;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease-in-out;
 
       h2 {
         text-align: center;
+        color: $dark-purple;
       }
 
       img {
         height: 450px;
         width: 100%;
+        padding-bottom: 50px;
 
         &:hover {
+          cursor: pointer;
           opacity: 0.6;
         }
       }
@@ -103,17 +116,20 @@ html {
         width: 200px;
         padding: 5px 10px;
         border: 2px solid black;
-        border-radius: 10%;
+        border-radius: 8%;
         text-decoration: none;
-        background: rgb(255, 255, 240);
-        color: black;
+        color: $dark-purple;
         font-size: 1.2em;
         font-weight: bold;
 
         &:hover {
-          background: rgb(117, 125, 129);
-          color: rgb(255, 255, 240);
+          background: $dark-purple;
+          color: $peach;
         }
+      }
+
+      @media (max-width: $medium) {
+        width: auto;
       }
     }
 
@@ -127,30 +143,32 @@ html {
       opacity: 1;
       transform: scale(1);
       margin-bottom: 20px;
-      h2 {
-        color: black;
+
+      &:hover {
+        transform: scale(1.011);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
       }
     }
   }
 }
 
 .about-section {
-  background-color: rgb(117, 125, 129);
+  background-color: $dark-purple;
   height: 500px;
 
   h1 {
     text-align: center;
     font-size: 3em;
-    color: rgb(255, 255, 240);
+    color: rgb(255, 182, 122);
   }
 
   .profile-image {
     display: flex;
 
     img {
-      width: 250px;
+      width: 225px;
       height: 250px;
-      border-radius: 10%;
+      border-radius: 50%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -159,25 +177,108 @@ html {
 
 .skills-section {
   height: auto;
-  background-color: rgb(255, 255, 240);
+  background-color: white;
 
   h1 {
     text-align: center;
     font-size: 3em;
-    color: rgb(117, 125, 129);
+    color: $dark-purple;
   }
 
   .skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     width: 80%;
 
     img {
       height: 70px;
       width: 70px;
+      padding-bottom: 5px;
+    }
+
+    .skill-icons {
+      text-align: center;
+      -webkit-transition: 1s ease-in-out;
+      -moz-transition: 1s ease-in-out;
+      -o-transition: 1s ease-in-out;
+      transition: 1s ease-in-out;
+
+      p {
+        color: $dark-purple;
+        font-size: 1.3em;
+      }
+
+      .fa-js:hover {
+        color: #f0db4f;
+      }
+
+      .fa-react:hover {
+        color: #61dafb;
+      }
+
+      .fa-node:hover {
+        color: #8bc500;
+      }
+
+      .fa-html5:hover {
+        color: #f16529;
+      }
+
+      .fa-css3-alt:hover {
+        color: #379ad6;
+      }
+
+      .fa-sass:hover {
+        color: #cd669a;
+      }
+
+      .fa-code-branch:hover {
+        color: #f05033;
+      }
+
+      &:hover {
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+      }
+    }
+  }
+}
+
+.contact-section {
+  height: auto;
+  background-color: $dark-purple;
+  padding-bottom: 25px;
+
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    color: $peach;
+    padding-top: 25px;
+  }
+
+  .contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .fa-github-alt,
+    .fa-linkedin,
+    .fa-envelope {
+      color: white;
+      padding: 15px;
+
+      &:hover {
+        color: $peach;
+      }
     }
   }
 }
