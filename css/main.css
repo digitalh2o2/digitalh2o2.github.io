@@ -3,6 +3,9 @@ html {
   height: 100%;
   margin: 0; }
 
+body {
+  scroll-behavior: smooth; }
+
 .Site {
   display: flex;
   min-height: 100vh;
@@ -23,6 +26,7 @@ html {
     display: inline-block;
     float: right;
     font-size: 1.2em;
+    font-family: "Ubuntu", sans-serif;
     color: #ffb67a;
     margin: 0 20px; }
 
@@ -37,9 +41,11 @@ html {
     text-align: center; }
     .name-section .name-container h1 {
       font-size: 4em;
+      font-family: "Ubuntu", sans-serif;
       color: #ffb67a; }
     .name-section .name-container p {
       font-size: 1.5em;
+      font-family: "Ubuntu", sans-serif;
       color: #ffb67a; }
 
 .work-section {
@@ -48,6 +54,7 @@ html {
   .work-section h1 {
     text-align: center;
     font-size: 3em;
+    font-family: "Ubuntu", sans-serif;
     color: rgba(48, 43, 59, 0.89); }
   .work-section .work-items {
     display: flex;
@@ -64,7 +71,13 @@ html {
       transition: all 0.3s ease-in-out; }
       .work-section .work-items .work-item h2 {
         text-align: center;
+        font-family: "Ubuntu", sans-serif;
         color: rgba(48, 43, 59, 0.89); }
+      .work-section .work-items .work-item p {
+        font-family: "Ubuntu", sans-serif;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; }
       .work-section .work-items .work-item img {
         height: 450px;
         width: 100%;
@@ -86,10 +99,11 @@ html {
         text-decoration: none;
         color: rgba(48, 43, 59, 0.89);
         font-size: 1.2em;
-        font-weight: bold; }
+        font-weight: bold;
+        font-family: "Ubuntu", sans-serif; }
         .work-section .work-items .work-item a:hover {
           background: rgba(48, 43, 59, 0.89);
-          color: #ffb67a; }
+          color: white; }
       @media (max-width: 770px) {
         .work-section .work-items .work-item {
           width: auto; } }
@@ -111,6 +125,7 @@ html {
   .about-section h1 {
     text-align: center;
     font-size: 3em;
+    font-family: "Ubuntu", sans-serif;
     color: #ffb67a; }
   .about-section .profile-image {
     display: flex; }
@@ -127,6 +142,7 @@ html {
   .skills-section h1 {
     text-align: center;
     font-size: 3em;
+    font-family: "Ubuntu", sans-serif;
     color: rgba(48, 43, 59, 0.89); }
   .skills-section .skills {
     display: flex;
@@ -147,7 +163,8 @@ html {
       transition: 1s ease-in-out; }
       .skills-section .skills .skill-icons p {
         color: rgba(48, 43, 59, 0.89);
-        font-size: 1.3em; }
+        font-size: 1.3em;
+        font-family: "Ubuntu", sans-serif; }
       .skills-section .skills .skill-icons .fa-js:hover {
         color: #f0db4f; }
       .skills-section .skills .skill-icons .fa-react:hover {
@@ -172,12 +189,17 @@ html {
 .contact-section {
   height: auto;
   background-color: rgba(48, 43, 59, 0.89);
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  text-align: center; }
   .contact-section h1 {
     text-align: center;
     font-size: 3em;
+    font-family: "Ubuntu", sans-serif;
     color: #ffb67a;
     padding-top: 25px; }
+  .contact-section p {
+    color: white;
+    font-family: "Ubuntu", sans-serif; }
   .contact-section .contact-icons {
     display: flex;
     flex-direction: row;
@@ -186,11 +208,13 @@ html {
     margin-left: auto;
     margin-right: auto; }
     .contact-section .contact-icons .fa-github-alt,
+    .contact-section .contact-icons .fa-twitter,
     .contact-section .contact-icons .fa-linkedin,
     .contact-section .contact-icons .fa-envelope {
       color: white;
       padding: 15px; }
       .contact-section .contact-icons .fa-github-alt:hover,
+      .contact-section .contact-icons .fa-twitter:hover,
       .contact-section .contact-icons .fa-linkedin:hover,
       .contact-section .contact-icons .fa-envelope:hover {
         color: #ffb67a; }

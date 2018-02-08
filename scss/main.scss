@@ -1,11 +1,16 @@
 $dark-purple: rgba(48, 43, 59, 0.89);
 $peach: rgb(255, 182, 122);
 $medium: 770px;
+$ubuntu: "Ubuntu", sans-serif;
 
 body,
 html {
   height: 100%;
   margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
 }
 
 .Site {
@@ -33,6 +38,7 @@ html {
     display: inline-block;
     float: right;
     font-size: 1.2em;
+    font-family: $ubuntu;
     color: $peach;
     margin: 0 20px;
   }
@@ -51,11 +57,13 @@ html {
 
     h1 {
       font-size: 4em;
+      font-family: $ubuntu;
       color: $peach;
     }
 
     p {
       font-size: 1.5em;
+      font-family: $ubuntu;
       color: $peach;
     }
   }
@@ -68,6 +76,7 @@ html {
   h1 {
     text-align: center;
     font-size: 3em;
+    font-family: $ubuntu;
     color: $dark-purple;
   }
 
@@ -88,7 +97,14 @@ html {
 
       h2 {
         text-align: center;
+        font-family: $ubuntu;
         color: $dark-purple;
+      }
+      p {
+        font-family: $ubuntu;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       img {
@@ -121,10 +137,11 @@ html {
         color: $dark-purple;
         font-size: 1.2em;
         font-weight: bold;
+        font-family: $ubuntu;
 
         &:hover {
           background: $dark-purple;
-          color: $peach;
+          color: white;
         }
       }
 
@@ -159,7 +176,8 @@ html {
   h1 {
     text-align: center;
     font-size: 3em;
-    color: rgb(255, 182, 122);
+    font-family: $ubuntu;
+    color: $peach;
   }
 
   .profile-image {
@@ -182,6 +200,7 @@ html {
   h1 {
     text-align: center;
     font-size: 3em;
+    font-family: $ubuntu;
     color: $dark-purple;
   }
 
@@ -209,6 +228,7 @@ html {
       p {
         color: $dark-purple;
         font-size: 1.3em;
+        font-family: $ubuntu;
       }
 
       .fa-js:hover {
@@ -254,12 +274,19 @@ html {
   height: auto;
   background-color: $dark-purple;
   padding-bottom: 25px;
+  text-align: center;
 
   h1 {
     text-align: center;
     font-size: 3em;
+    font-family: $ubuntu;
     color: $peach;
     padding-top: 25px;
+  }
+
+  p {
+    color: white;
+    font-family: $ubuntu;
   }
 
   .contact-icons {
@@ -271,6 +298,7 @@ html {
     margin-right: auto;
 
     .fa-github-alt,
+    .fa-twitter,
     .fa-linkedin,
     .fa-envelope {
       color: white;

@@ -5,14 +5,15 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <title>Saul Ocampo</title>
   </head>
-  <body class="site">
-    <nav class="navbar">
+  <body>
+    <nav id="top" class="navbar">
       <ul>
-        <li>Contact</li>
-        <li>About</li>
-        <li>Projects</li>
+        <a href="#contact"><li>Contact</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#projects"><li>Projects</li></a>
       </ul>
     </nav>
 
@@ -23,31 +24,31 @@
       </div>
     </section>
 
-    <section class="work-section site-content">
+    <section id="projects" class="work-section">
       <h1>Projects</h1>
       <div class="work-items">
         <div class="work-row">
           <!-- Start individual divs for projects -->
           <div class="work-item sliderGroup">
             <div>
-              <h2>Current Weather</h2>
+              <h2>Current Weather - <i class="fab fa-html5"></i> <i class="fab fa-js"></i> <i class="fab fa-sass"></i></h2>
               <div class="buttons">
                 <a class="button" href="https://digitalh2o2.github.io/forecast_search/" target="_blank">Live</a>
                 <a class="button" href="https://github.com/digitalh2o2/forecast_search" target="_blank">Github</a>
               </div>
-
+              <p>A weather app built using the Weather Underground API. Provides the current weather for desired location. Simply enter city or zip code.</p>
               <img  src="./images/forecast.jpeg" alt="Forecast">
             </div>
           </div>
 
           <div class="work-item sliderGroup">
             <div class="padder">
-              <h2>React Bitget</h2>
+              <h2>React Bitget - <i class="fab fa-html5"></i> <i class="fab fa-js"></i> <i class="fab fa-react"></i> <i class="fab fa-sass"></i></h2>
               <div class="buttons">
                 <a class="button" href="https://react-bitget.surge.sh/" target="_blank">Live</a>
                 <a class="button" href="https://github.com/digitalh2o2/react_bitget" target="_blank">Github</a>
               </div>
-
+              <p>A web app built in <strong>ReactJS</strong> using the IGDB API. Visitors can search by game title and explore the video game detalied based on their selection. Styling and layout built with Bulma.</p>
               <img src="./images/bitget.jpeg" alt="React Bitget">
             </div>
           </div>
@@ -56,22 +57,24 @@
         <div class="work-row">
           <div class="work-item sliderGroup">
             <div class="">
-              <h2>Recipe Finder</h2>
+              <h2>Recipe Finder - <i class="fab fa-html5"></i> <i class="fab fa-js"></i> <i class="fab fa-sass"></i></h2>
               <div class="buttons">
                 <a class="button" href="https://digitalh2o2.github.io/recipefinder/" target="_blank">Live</a>
                 <a class="button" href="https://github.com/digitalh2o2/recipefinder" target="_blank">Github</a>
               </div>
+              <p>A web app built using the Food2Fork API. Simply enter an ingredient and a list of recipes will appear before you based on your search.</p>
               <img src="./images/recipe.jpeg" alt="Recipe">
             </div>
           </div>
 
           <div class="work-item sliderGroup">
             <div class="padder">
-              <h2>Fwitter</h2>
+              <h2>Fwitter - <i class="fab fa-html5"></i> <i class="fab fa-js"></i> <i class="fab fa-node"></i> <i class="fab fa-sass"> </i></h2>
               <div class="buttons">
                 <a class="button" href="https://hidden-brushlands-65586.herokuapp.com/" target="_blank">Live</a>
                 <a class="button" href="https://github.com/digitalh2o2/fwitter" target="_blank">Github</a>
               </div>
+              <p>A <strong>fullstack</strong> web app with basic features of Twitter. Visitors can create accounts, tweets, and comments as well as follow users and like tweets. <strong>Node.js</strong> with <strong>mongoDB</strong> database was used for the backend.</p>
               <img src="./images/fwitter.jpeg" alt="Fwitter">
             </div>
           </div>
@@ -80,7 +83,7 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section id="about" class="about-section">
       <h1>About</h1>
       <div class="profile-image">
         <img src="./images/profile.jpg" alt="">
@@ -97,7 +100,7 @@
         </div>
         <div class="skill-icons">
           <i class="fab fa-react fa-5x"></i>
-          <p>React</p>
+          <p>ReactJS</p>
         </div>
         <div class="skill-icons">
           <i class="fab fa-node fa-5x"></i>
@@ -142,7 +145,7 @@
       </div>
     </section>
 
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
       <h1>Contact</h1>
       <div class="contact-icons">
         <div class="contact-icon">
@@ -152,10 +155,21 @@
           <a href="https://www.linkedin.com/in/saulocampo/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
         </div>
         <div class="contact-icon">
+          <a href="https://www.twitter.com/digitalh2ocode" target="_blank"><i class="fab fa-twitter fa-5x"></i></a>
+        </div>
+        <div class="contact-icon">
           <a href="mailto:ocampo.p.saul@gmail.com?subject=Someone wants to connect."><i class="fas fa-envelope fa-5x"></i></a>
         </div>
       </div>
+      <br>
+      <div>
+        <a href="#top"><p>Top</p></a>
+      </div>
     </section>
     <script src='./main.js'></script>
+    <script src='./smooth-scroll.polyfills.min.js'></script>
+    <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
   </body>
 </html>
