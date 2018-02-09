@@ -1,7 +1,18 @@
+/*
+  ========================
+  Variables
+  ========================
+*/
 $dark-purple: rgba(48, 43, 59, 0.89);
 $peach: rgb(255, 182, 122);
 $medium: 770px;
 $ubuntu: "Ubuntu", sans-serif;
+
+/*
+  ========================
+  Main Page Styling
+  ========================
+*/
 
 body,
 html {
@@ -9,19 +20,11 @@ html {
   margin: 0;
 }
 
-body {
-  scroll-behavior: smooth;
-}
-
-.Site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.site-content {
-  flex: 1;
-}
+/*
+  ========================
+  Navbar
+  ========================
+*/
 
 .navbar {
   width: auto;
@@ -41,8 +44,18 @@ body {
     font-family: $ubuntu;
     color: $peach;
     margin: 0 20px;
+
+    &:hover {
+      color: darken($peach, 20%);
+    }
   }
 }
+
+/*
+  ========================
+  Name Section
+  ========================
+*/
 
 .name-section {
   display: flex;
@@ -68,6 +81,12 @@ body {
     }
   }
 }
+
+/*
+  ========================
+  Projects Section
+  ========================
+*/
 
 .work-section {
   height: auto;
@@ -100,6 +119,7 @@ body {
         font-family: $ubuntu;
         color: $dark-purple;
       }
+
       p {
         font-family: $ubuntu;
         width: 80%;
@@ -132,7 +152,7 @@ body {
         width: 200px;
         padding: 5px 10px;
         border: 2px solid black;
-        border-radius: 8%;
+        border-radius: 5%;
         text-decoration: none;
         color: $dark-purple;
         font-size: 1.2em;
@@ -145,6 +165,7 @@ body {
         }
       }
 
+      // for mobile devices //
       @media (max-width: $medium) {
         width: auto;
       }
@@ -169,13 +190,30 @@ body {
   }
 }
 
+/*
+  ========================
+  About Section
+  ========================
+*/
+
 .about-section {
   background-color: $dark-purple;
-  height: 500px;
+  height: auto;
 
   h1 {
+    padding-top: 25px;
     text-align: center;
     font-size: 3em;
+    font-family: $ubuntu;
+    color: $peach;
+  }
+
+  p {
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    font-size: 1.2em;
     font-family: $ubuntu;
     color: $peach;
   }
@@ -192,6 +230,12 @@ body {
     }
   }
 }
+
+/*
+  ========================
+  Skills Section
+  ========================
+*/
 
 .skills-section {
   height: auto;
@@ -231,6 +275,7 @@ body {
         font-family: $ubuntu;
       }
 
+      // Skill icons color change on hover //
       .fa-js:hover {
         color: #f0db4f;
       }
@@ -269,6 +314,12 @@ body {
     }
   }
 }
+
+/*
+  ========================
+  Contact Section
+  ========================
+*/
 
 .contact-section {
   height: auto;
