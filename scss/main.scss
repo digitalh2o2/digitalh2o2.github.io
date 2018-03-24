@@ -60,7 +60,7 @@ html {
 .name-section {
   display: flex;
   background: $dark-purple;
-  height: 600px;
+  height: 100vh;
   width: 100%;
   padding: -10px;
 
@@ -168,6 +168,10 @@ html {
       // for mobile devices //
       @media (max-width: $medium) {
         width: auto;
+
+        img {
+          height: 380px;
+        }
       }
     }
 
