@@ -258,7 +258,7 @@ html {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
-    width: 80%;
+    width: 95%;
 
     img {
       height: 70px;
@@ -267,6 +267,7 @@ html {
     }
 
     .skill-icons {
+      padding: 11px;
       text-align: center;
       -webkit-transition: 1s ease-in-out;
       -moz-transition: 1s ease-in-out;
