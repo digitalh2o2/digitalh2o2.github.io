@@ -99,14 +99,13 @@ html {
     color: $dark-purple;
   }
 
-  .work-items {
+  .work-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     height: auto;
     width: auto;
-
     .work-item {
       height: auto;
       width: 700px;
@@ -137,15 +136,16 @@ html {
           opacity: 0.6;
         }
       }
+      #pomo-style {
+        display: block;
+        margin: auto;
+        width: 50%;
+      }
 
       .buttons {
         position: relative;
         padding-bottom: 20px;
         text-align: center;
-      }
-
-      .padder {
-        padding-top: 40px;
       }
 
       a {

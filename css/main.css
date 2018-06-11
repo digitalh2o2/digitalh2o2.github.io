@@ -72,42 +72,44 @@ html {
     font-size: 3em;
     font-family: "Ubuntu", sans-serif;
     color: rgba(48, 43, 59, 0.89); }
-  .work-section .work-items {
+  .work-section .work-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     height: auto;
     width: auto; }
-    .work-section .work-items .work-item {
+    .work-section .work-row .work-item {
       height: auto;
       width: 700px;
       margin: 10px;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
       transition: all 0.3s ease-in-out; }
-      .work-section .work-items .work-item h2 {
+      .work-section .work-row .work-item h2 {
         text-align: center;
         font-family: "Ubuntu", sans-serif;
         color: rgba(48, 43, 59, 0.89); }
-      .work-section .work-items .work-item p {
+      .work-section .work-row .work-item p {
         font-family: "Ubuntu", sans-serif;
         width: 80%;
         margin-left: auto;
         margin-right: auto; }
-      .work-section .work-items .work-item img {
+      .work-section .work-row .work-item img {
         height: 450px;
         width: 100%;
         padding-bottom: 50px; }
-        .work-section .work-items .work-item img:hover {
+        .work-section .work-row .work-item img:hover {
           cursor: pointer;
           opacity: 0.6; }
-      .work-section .work-items .work-item .buttons {
+      .work-section .work-row .work-item #pomo-style {
+        display: block;
+        margin: auto;
+        width: 50%; }
+      .work-section .work-row .work-item .buttons {
         position: relative;
         padding-bottom: 20px;
         text-align: center; }
-      .work-section .work-items .work-item .padder {
-        padding-top: 40px; }
-      .work-section .work-items .work-item a {
+      .work-section .work-row .work-item a {
         width: 200px;
         padding: 5px 10px;
         border: 2px solid black;
@@ -117,23 +119,23 @@ html {
         font-size: 1.2em;
         font-weight: bold;
         font-family: "Ubuntu", sans-serif; }
-        .work-section .work-items .work-item a:hover {
+        .work-section .work-row .work-item a:hover {
           background: rgba(48, 43, 59, 0.89);
           color: white; }
       @media (max-width: 770px) {
-        .work-section .work-items .work-item {
+        .work-section .work-row .work-item {
           width: auto; }
-          .work-section .work-items .work-item img {
+          .work-section .work-row .work-item img {
             height: 380px; } }
-    .work-section .work-items .sliderGroup {
+    .work-section .work-row .sliderGroup {
       transition: all 0.5s;
       transform: scale(0.1);
       opacity: 0; }
-    .work-section .work-items .sliderGroup.active {
+    .work-section .work-row .sliderGroup.active {
       opacity: 1;
       transform: scale(1);
       margin-bottom: 20px; }
-      .work-section .work-items .sliderGroup.active:hover {
+      .work-section .work-row .sliderGroup.active:hover {
         transform: scale(1.011);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
 
