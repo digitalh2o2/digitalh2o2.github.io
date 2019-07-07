@@ -11,7 +11,8 @@
 body,
 html {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+}
 
 /*
   ========================
@@ -21,20 +22,24 @@ html {
 .navbar {
   width: auto;
   height: 50px;
-  background: rgba(48, 43, 59, 0.89);
-  border-bottom: 1px solid #ffb67a; }
-  .navbar ul {
-    margin: 0;
-    padding: 12px; }
-  .navbar li {
-    display: inline-block;
-    float: right;
-    font-size: 1.2em;
-    font-family: "Ubuntu", sans-serif;
-    color: #ffb67a;
-    margin: 0 20px; }
-    .navbar li:hover {
-      color: #ff7e14; }
+  background: #00416a;
+  border-bottom: 1px solid #e4e5e6;
+}
+.navbar ul {
+  margin: 0;
+  padding: 12px;
+}
+.navbar li {
+  display: inline-block;
+  float: right;
+  font-size: 1.2em;
+  font-family: "Ubuntu", sans-serif;
+  color: #e4e5e6;
+  margin: 0 20px;
+}
+.navbar li:hover {
+  color: #afb2b5;
+}
 
 /*
   ========================
@@ -43,21 +48,25 @@ html {
 */
 .name-section {
   display: flex;
-  background: rgba(48, 43, 59, 0.89);
+  background: #00416a;
   height: 100vh;
   width: 100%;
-  padding: -10px; }
-  .name-section .name-container {
-    margin: auto;
-    text-align: center; }
-    .name-section .name-container h1 {
-      font-size: 4em;
-      font-family: "Ubuntu", sans-serif;
-      color: #ffb67a; }
-    .name-section .name-container p {
-      font-size: 1.5em;
-      font-family: "Ubuntu", sans-serif;
-      color: #ffb67a; }
+  padding: -10px;
+}
+.name-section .name-container {
+  margin: auto;
+  text-align: center;
+}
+.name-section .name-container h1 {
+  font-size: 4em;
+  font-family: "Ubuntu", sans-serif;
+  color: #e4e5e6;
+}
+.name-section .name-container p {
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  color: #e4e5e6;
+}
 
 /*
   ========================
@@ -66,78 +75,96 @@ html {
 */
 .work-section {
   height: auto;
-  width: auto; }
-  .work-section h1 {
-    text-align: center;
-    font-size: 3em;
-    font-family: "Ubuntu", sans-serif;
-    color: rgba(48, 43, 59, 0.89); }
-  .work-section .work-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: auto;
-    width: auto; }
-    .work-section .work-row .work-item {
-      height: auto;
-      width: 700px;
-      margin: 10px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-      transition: all 0.3s ease-in-out; }
-      .work-section .work-row .work-item h2 {
-        text-align: center;
-        font-family: "Ubuntu", sans-serif;
-        color: rgba(48, 43, 59, 0.89); }
-      .work-section .work-row .work-item p {
-        font-family: "Ubuntu", sans-serif;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto; }
-      .work-section .work-row .work-item img {
-        height: 450px;
-        width: 100%;
-        padding-bottom: 50px; }
-        .work-section .work-row .work-item img:hover {
-          cursor: pointer;
-          opacity: 0.6; }
-      .work-section .work-row .work-item #pomo-style {
-        display: block;
-        margin: auto;
-        width: 50%; }
-      .work-section .work-row .work-item .buttons {
-        position: relative;
-        padding-bottom: 20px;
-        text-align: center; }
-      .work-section .work-row .work-item a {
-        width: 200px;
-        padding: 5px 10px;
-        border: 2px solid black;
-        border-radius: 5%;
-        text-decoration: none;
-        color: rgba(48, 43, 59, 0.89);
-        font-size: 1.2em;
-        font-weight: bold;
-        font-family: "Ubuntu", sans-serif; }
-        .work-section .work-row .work-item a:hover {
-          background: rgba(48, 43, 59, 0.89);
-          color: white; }
-      @media (max-width: 770px) {
-        .work-section .work-row .work-item {
-          width: auto; }
-          .work-section .work-row .work-item img {
-            height: 380px; } }
-    .work-section .work-row .sliderGroup {
-      transition: all 0.5s;
-      transform: scale(0.1);
-      opacity: 0; }
-    .work-section .work-row .sliderGroup.active {
-      opacity: 1;
-      transform: scale(1);
-      margin-bottom: 20px; }
-      .work-section .work-row .sliderGroup.active:hover {
-        transform: scale(1.011);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+  width: auto;
+}
+.work-section h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Ubuntu", sans-serif;
+  color: #00416a;
+}
+.work-section .work-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+}
+.work-section .work-row .work-item {
+  height: auto;
+  width: 700px;
+  margin: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+.work-section .work-row .work-item h2 {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  color: #00416a;
+}
+.work-section .work-row .work-item p {
+  font-family: "Ubuntu", sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work-section .work-row .work-item img {
+  height: 450px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.work-section .work-row .work-item img:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.work-section .work-row .work-item #pomo-style {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+.work-section .work-row .work-item .buttons {
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.work-section .work-row .work-item a {
+  width: 200px;
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 5%;
+  text-decoration: none;
+  color: #00416a;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+.work-section .work-row .work-item a:hover {
+  background: #00416a;
+  color: white;
+}
+@media (max-width: 770px) {
+  .work-section .work-row .work-item {
+    width: auto;
+  }
+  .work-section .work-row .work-item img {
+    height: 380px;
+  }
+}
+.work-section .work-row .sliderGroup {
+  transition: all 0.5s;
+  transform: scale(0.1);
+  opacity: 0;
+}
+.work-section .work-row .sliderGroup.active {
+  opacity: 1;
+  transform: scale(1);
+  margin-bottom: 20px;
+}
+.work-section .work-row .sliderGroup.active:hover {
+  transform: scale(1.011);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
 
 /*
   ========================
@@ -145,30 +172,38 @@ html {
   ========================
 */
 .about-section {
-  background-color: rgba(48, 43, 59, 0.89);
-  height: auto; }
-  .about-section h1 {
-    padding-top: 25px;
-    text-align: center;
-    font-size: 3em;
-    font-family: "Ubuntu", sans-serif;
-    color: #ffb67a; }
-  .about-section p {
-    width: 58%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 15px;
-    font-size: 1.2em;
-    font-family: "Ubuntu", sans-serif;
-    color: #ffb67a; }
-  .about-section .profile-image {
-    display: flex; }
-    .about-section .profile-image img {
-      width: 225px;
-      height: 250px;
-      border-radius: 50%;
-      margin-left: auto;
-      margin-right: auto; }
+  background-color: #00416a;
+  height: auto;
+}
+.about-section h1 {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Ubuntu", sans-serif;
+  color: #e4e5e6;
+}
+.about-section p {
+  width: 58%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  font-size: 1.2em;
+  font-family: "Ubuntu", sans-serif;
+  color: #e4e5e6;
+}
+.about-section p a {
+  color: #e4e5e6;
+}
+.about-section .profile-image {
+  display: flex;
+}
+.about-section .profile-image img {
+  width: 225px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*
   ========================
@@ -177,54 +212,68 @@ html {
 */
 .skills-section {
   height: auto;
-  background-color: white; }
-  .skills-section h1 {
-    text-align: center;
-    font-size: 3em;
-    font-family: "Ubuntu", sans-serif;
-    color: rgba(48, 43, 59, 0.89); }
-  .skills-section .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-    width: 95%; }
-    .skills-section .skills img {
-      height: 70px;
-      width: 70px;
-      padding-bottom: 5px; }
-    .skills-section .skills .skill-icons {
-      padding: 11px;
-      text-align: center;
-      -webkit-transition: 1s ease-in-out;
-      -moz-transition: 1s ease-in-out;
-      -o-transition: 1s ease-in-out;
-      transition: 1s ease-in-out; }
-      .skills-section .skills .skill-icons p {
-        color: rgba(48, 43, 59, 0.89);
-        font-size: 1.3em;
-        font-family: "Ubuntu", sans-serif; }
-      .skills-section .skills .skill-icons .fa-js:hover {
-        color: #f0db4f; }
-      .skills-section .skills .skill-icons .fa-react:hover {
-        color: #61dafb; }
-      .skills-section .skills .skill-icons .fa-node:hover {
-        color: #8bc500; }
-      .skills-section .skills .skill-icons .fa-html5:hover {
-        color: #f16529; }
-      .skills-section .skills .skill-icons .fa-css3-alt:hover {
-        color: #379ad6; }
-      .skills-section .skills .skill-icons .fa-sass:hover {
-        color: #cd669a; }
-      .skills-section .skills .skill-icons .fa-code-branch:hover {
-        color: #f05033; }
-      .skills-section .skills .skill-icons:hover {
-        -webkit-transform: rotateY(360deg);
-        -moz-transform: rotateY(360deg);
-        -o-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-        transform: rotateY(360deg); }
+  background-color: white;
+}
+.skills-section h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Ubuntu", sans-serif;
+  color: #00416a;
+}
+.skills-section .skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 95%;
+}
+.skills-section .skills img {
+  height: 70px;
+  width: 70px;
+  padding-bottom: 5px;
+}
+.skills-section .skills .skill-icons {
+  padding: 11px;
+  text-align: center;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.skills-section .skills .skill-icons p {
+  color: #00416a;
+  font-size: 1.3em;
+  font-family: "Ubuntu", sans-serif;
+}
+.skills-section .skills .skill-icons .fa-js:hover {
+  color: #f0db4f;
+}
+.skills-section .skills .skill-icons .fa-react:hover {
+  color: #61dafb;
+}
+.skills-section .skills .skill-icons .fa-node:hover {
+  color: #8bc500;
+}
+.skills-section .skills .skill-icons .fa-html5:hover {
+  color: #f16529;
+}
+.skills-section .skills .skill-icons .fa-css3-alt:hover {
+  color: #379ad6;
+}
+.skills-section .skills .skill-icons .fa-sass:hover {
+  color: #cd669a;
+}
+.skills-section .skills .skill-icons .fa-code-branch:hover {
+  color: #f05033;
+}
+.skills-section .skills .skill-icons:hover {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
 
 /*
   ========================
@@ -233,35 +282,41 @@ html {
 */
 .contact-section {
   height: auto;
-  background-color: rgba(48, 43, 59, 0.89);
+  background-color: #00416a;
   padding-bottom: 25px;
-  text-align: center; }
-  .contact-section h1 {
-    text-align: center;
-    font-size: 3em;
-    font-family: "Ubuntu", sans-serif;
-    color: #ffb67a;
-    padding-top: 25px; }
-  .contact-section p {
-    color: white;
-    font-family: "Ubuntu", sans-serif; }
-  .contact-section .contact-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto; }
-    .contact-section .contact-icons .fa-github-alt,
-    .contact-section .contact-icons .fa-twitter,
-    .contact-section .contact-icons .fa-linkedin,
-    .contact-section .contact-icons .fa-envelope {
-      color: white;
-      padding: 15px; }
-      .contact-section .contact-icons .fa-github-alt:hover,
-      .contact-section .contact-icons .fa-twitter:hover,
-      .contact-section .contact-icons .fa-linkedin:hover,
-      .contact-section .contact-icons .fa-envelope:hover {
-        color: #ffb67a; }
+  text-align: center;
+}
+.contact-section h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Ubuntu", sans-serif;
+  color: #e4e5e6;
+  padding-top: 25px;
+}
+.contact-section p {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.contact-section .contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-section .contact-icons .fa-github-alt,
+.contact-section .contact-icons .fa-twitter,
+.contact-section .contact-icons .fa-linkedin,
+.contact-section .contact-icons .fa-envelope {
+  color: white;
+  padding: 15px;
+}
+.contact-section .contact-icons .fa-github-alt:hover,
+.contact-section .contact-icons .fa-twitter:hover,
+.contact-section .contact-icons .fa-linkedin:hover,
+.contact-section .contact-icons .fa-envelope:hover {
+  color: #e4e5e6;
+}
 
 /*# sourceMappingURL=main.css.map */

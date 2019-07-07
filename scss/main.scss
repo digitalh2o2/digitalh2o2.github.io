@@ -3,8 +3,8 @@
   Variables
   ========================
 */
-$dark-purple: rgba(48, 43, 59, 0.89);
-$peach: rgb(255, 182, 122);
+$blu: #00416a;
+$chalk: #e4e5e6;
 $medium: 770px;
 $ubuntu: "Ubuntu", sans-serif;
 
@@ -29,8 +29,8 @@ html {
 .navbar {
   width: auto;
   height: 50px;
-  background: $dark-purple;
-  border-bottom: 1px solid $peach;
+  background: $blu;
+  border-bottom: 1px solid $chalk;
 
   ul {
     margin: 0;
@@ -42,11 +42,11 @@ html {
     float: right;
     font-size: 1.2em;
     font-family: $ubuntu;
-    color: $peach;
+    color: $chalk;
     margin: 0 20px;
 
     &:hover {
-      color: darken($peach, 20%);
+      color: darken($chalk, 20%);
     }
   }
 }
@@ -59,7 +59,7 @@ html {
 
 .name-section {
   display: flex;
-  background: $dark-purple;
+  background: $blu;
   height: 100vh;
   width: 100%;
   padding: -10px;
@@ -71,13 +71,13 @@ html {
     h1 {
       font-size: 4em;
       font-family: $ubuntu;
-      color: $peach;
+      color: $chalk;
     }
 
     p {
       font-size: 1.5em;
       font-family: $ubuntu;
-      color: $peach;
+      color: $chalk;
     }
   }
 }
@@ -96,7 +96,7 @@ html {
     text-align: center;
     font-size: 3em;
     font-family: $ubuntu;
-    color: $dark-purple;
+    color: $blu;
   }
 
   .work-row {
@@ -116,7 +116,7 @@ html {
       h2 {
         text-align: center;
         font-family: $ubuntu;
-        color: $dark-purple;
+        color: $blu;
       }
 
       p {
@@ -154,13 +154,13 @@ html {
         border: 2px solid black;
         border-radius: 5%;
         text-decoration: none;
-        color: $dark-purple;
+        color: $blu;
         font-size: 1.2em;
         font-weight: bold;
         font-family: $ubuntu;
 
         &:hover {
-          background: $dark-purple;
+          background: $blu;
           color: white;
         }
       }
@@ -201,7 +201,7 @@ html {
 */
 
 .about-section {
-  background-color: $dark-purple;
+  background-color: $blu;
   height: auto;
 
   h1 {
@@ -209,7 +209,7 @@ html {
     text-align: center;
     font-size: 3em;
     font-family: $ubuntu;
-    color: $peach;
+    color: $chalk;
   }
 
   p {
@@ -219,7 +219,11 @@ html {
     padding-bottom: 15px;
     font-size: 1.2em;
     font-family: $ubuntu;
-    color: $peach;
+    color: $chalk;
+
+    a {
+      color: $chalk;
+    }
   }
 
   .profile-image {
@@ -249,7 +253,7 @@ html {
     text-align: center;
     font-size: 3em;
     font-family: $ubuntu;
-    color: $dark-purple;
+    color: $blu;
   }
 
   .skills {
@@ -275,7 +279,7 @@ html {
       transition: 1s ease-in-out;
 
       p {
-        color: $dark-purple;
+        color: $blu;
         font-size: 1.3em;
         font-family: $ubuntu;
       }
@@ -328,7 +332,7 @@ html {
 
 .contact-section {
   height: auto;
-  background-color: $dark-purple;
+  background-color: $blu;
   padding-bottom: 25px;
   text-align: center;
 
@@ -336,7 +340,7 @@ html {
     text-align: center;
     font-size: 3em;
     font-family: $ubuntu;
-    color: $peach;
+    color: $chalk;
     padding-top: 25px;
   }
 
@@ -361,7 +365,7 @@ html {
       padding: 15px;
 
       &:hover {
-        color: $peach;
+        color: $chalk;
       }
     }
   }

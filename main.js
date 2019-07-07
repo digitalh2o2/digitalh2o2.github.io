@@ -1,4 +1,4 @@
-console.log("hi");
+console.log("Feel free to browse the code :)");
 
 let sliders = document.querySelectorAll(".sliderGroup");
 
