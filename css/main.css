@@ -35,7 +35,7 @@ html {
   font-size: 1.2em;
   font-family: "Ubuntu", sans-serif;
   color: #e4e5e6;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 .navbar li:hover {
   color: #afb2b5;
@@ -198,7 +198,7 @@ html {
   display: flex;
 }
 .about-section .profile-image img {
-  width: 225px;
+  width: 250px;
   height: 250px;
   border-radius: 50%;
   margin-left: auto;
